@@ -22,7 +22,7 @@ const Login = () => {
         console.log('Email:', email);
         console.log('Password:', password);
 
-        fetch('https://miniature-enigma-qwrxrwpg5wqc9j65-3001.app.github.dev/api/token', options)
+        fetch('https://miniature-enigma-qwrxrwpg5wqc9j65-3001.app.github.dev/api/login', options)
             .then(response => {
                 if (response.status === 200) {
                     return response.json();
